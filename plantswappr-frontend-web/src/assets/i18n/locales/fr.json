@@ -1,0 +1,77 @@
+{
+  "translations": {
+    "language": {
+      "fr": "FR",
+      "en": "EN"
+    },
+    "error": {
+      "report": "Signaler le bug !",
+      "404": "Oh non ! La page que vous demandez n'existe pas ou a été déplacée...",
+      "404.goback": "Retourner vers la page d'accueil"
+    },
+    "landing": {
+      "welcome": "Bienvenue <br/>sur",
+      "presentation": {
+        "question": "C'est quoi le concept ? Eh bien ... les plantes, pleins de plantes, allant de boutures à plantes adultes, toutes disponibles à l'adoption! Et disponibles en seulement un échange.",
+        "more": "C'est tout ?",
+        "answer": "Non! Tu peux aussi :",
+        "point1": "Trouver des conseils pour bien s'occuper de vos plantes et les identifier.",
+        "point2": "Garder un inventaire des bébés que vous possédez.",
+        "point3": "Construire des wishlists composées des perles rares que vous recherchez.",
+        "point4": "Echanger les plantes capricieuses qui neveulent juste pas vivre avec vous peut importe l'effort que vous fournissez.",
+        "point5": "Echanger intelligemment ! Indiquez quelles plantes vous voulez acquérir pour chaque swap que vous offrez."
+      },
+      "register": "Nouveau sur PlantSwappr? Créez un compte",
+      "login": "Vous avez déjà un compte ? Connectez vous",
+      "socials": "Via les réseaux",
+      "facebook": "Facebook",
+      "google": "Google",
+      "instagram": "Instagram"
+    },
+    "login": {
+      "asklogin": "Connectez vous.",
+      "username": {
+        "label": "Nom d'utilisateur ou email",
+        "invalid": "Ce nom d'utilisateur ou cet email n'existe pas."
+      },
+      "password": {
+        "label": "Mot de passe",
+        "invalid": "La combinaison du nom d'utilisateur et du mot de passe est invalide.",
+        "forgotten": "Mot de passe oublié?"
+      },
+      "register": "Pas de compte ? Enregistrez vous maintenant!",
+      "keepconnection": "Rester connecté",
+      "ready": "C'est parti !"
+    },
+    "register": {
+      "askregister": "Inscrivez vous.",
+      "email": {
+        "label": "Adresse email",
+        "placeholder": "email@mail.com",
+        "invalid": "Cette adresse email n'est pas valide.",
+        "taken": "Cette adresse email est déjà associée à un compte."
+      },
+      "username": {
+        "label": "Nom d'utilisateur",
+        "placeholder": "PlantParent",
+        "taken": "Le nom d'utilisateur est déjà pris, essayez en un autre."
+      },
+      "password": {
+        "label": "Mot de passe",
+        "placeholder": "********",
+        "invalid": "Le mot de passe est invalide.",
+        "repeat": "Répètez votre mot de passe",
+        "notMatching": "Les mots de passe ne sont pas les mêmes."
+      },
+      "country": {
+        "label": "Pays",
+        "belgium": "Belgique",
+        "france": "France"
+      },
+      "ready": "C'est prêt !"
+    },
+    "sidebar": {},
+    "navbar": {},
+    "footer": {}
+  }
+}

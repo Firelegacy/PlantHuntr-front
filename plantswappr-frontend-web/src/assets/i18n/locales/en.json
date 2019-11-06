@@ -1,0 +1,77 @@
+{
+  "translations": {
+    "language": {
+      "fr": "FR",
+      "en": "EN"
+    },
+    "error": {
+      "report": "Report the bug !",
+      "404": "Oh no ! The page you're looking for doesn't exist or moved elsewhere...",
+      "404.goback": "Go back to the homepage"
+    },
+    "landing": {
+      "welcome": "Welcome <br/>to",
+      "presentation": {
+        "question": "What's the concept here ? Well ... plants, tons of plants, from small cuttings to adults, all for adoption! And they're only one swap away.",
+        "more": "That's it ?",
+        "answer": "No! You can also :",
+        "point1": "Check for care advice for your plants and identify them.",
+        "point2": "Keep an inventory of all your owned babies.",
+        "point3": "Build your personal wishlist with rare gems you're looking for.",
+        "point4": "Exchange fussy plants that just can't seem to thrive no matter what you do.",
+        "point5": "Swap smartly ! Indicate which plants you wish to acquire for each swap that you propose."
+      },
+      "register": "New to PlantSwappr ? Register now",
+      "login": "Already have an account? Log in",
+      "socials": "Use socials",
+      "facebook": "Facebook",
+      "google": "Google",
+      "instagram": "Instagram"
+    },
+    "login": {
+      "asklogin": "Fill in to log in.",
+      "username": {
+        "label": "User name or email",
+        "invalid": "This username or email doesn't exist."
+      },
+      "password": {
+        "label": "Password",
+        "invalid": "The combination of the username and the password is invalid.",
+        "forgotten": "Forgotten password?"
+      },
+      "register": "Don't have an account? Sign Up now!",
+      "keepconnection": "Stay logged in",
+      "ready": "Let's go !"
+    },
+    "register": {
+      "askregister": "Register your informations.",
+      "email": {
+        "label": "Email address",
+        "placeholder": "email@mail.com",
+        "invalid": "This email address is not valid.",
+        "taken": "This email address is already associated to an account."
+      },
+      "username": {
+        "label": "User name",
+        "placeholder": "PlantParent",
+        "taken": "This user name is already taken, try another one."
+      },
+      "password": {
+        "label": "Password",
+        "placeholder": "********",
+        "invalid": "The password is not in the correct format.",
+        "repeat": "Repeat your password",
+        "notMatching": "The passwords doesn't match."
+      },
+      "country": {
+        "label": "Country",
+        "country.belgium": "Belgium",
+        "country.france": "France"
+      },
+      "ready": "It's ready !"
+    },
+    "sidebar": {},
+    "navbar": {},
+    "footer": {}
+  }
+}
