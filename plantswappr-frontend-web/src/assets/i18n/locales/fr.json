@@ -9,6 +9,11 @@
       "404": "Oh non ! La page que vous demandez n'existe pas ou a été déplacée...",
       "404.goback": "Retourner vers la page d'accueil"
     },
+    "menu": {
+      "link": {
+        "about-plantswappr": "Qui sommes nous"
+      }
+    },
     "landing": {
       "welcome": "Bienvenue <br/>sur",
       "presentation": {

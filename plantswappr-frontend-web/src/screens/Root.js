@@ -1,11 +1,10 @@
-// Application Router
 import React from 'react';
 import { Router } from '@reach/router';
 
-import NotFound from '../components/UI/errors/NotFound/NotFound';
-import Landing from './guest/Landing/Landing';
-import Login from './guest/Login/Login';
-import Register from './guest/Register/Register';
+import NotFound from 'components/general/errors/NotFound';
+import Landing from 'screens/guest/Landing/Landing';
+import Login from 'screens/guest/Login/Login';
+import Register from 'screens/guest/Register/Register';
 
 function Root() {
   return (

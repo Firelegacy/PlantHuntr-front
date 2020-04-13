@@ -1,77 +1,91 @@
 import React from 'react';
+import { useForm } from 'react-hook-form';
 import {
-  Grid,
+  FormErrorMessage,
+  FormLabel,
+  FormControl,
+  Input,
   Button,
-  FormControlLabel,
-  Checkbox,
-  Typography,
-  TextField,
-  Link,
   Box,
-  Container
-} from '@material-ui/core';
-import { LockOutlined } from '@material-ui/icons';
+  Link,
+  Checkbox,
+  Icon
+} from '@chakra-ui/core';
 import { useTranslation } from 'react-i18next';
-import { textAlign } from '@material-ui/system';
 
 function LoginForm() {
+  const { handleSubmit, errors, register, formState } = useForm();
   const { t } = useTranslation();
+
+  function validateName(value) {
+    let error;
+    if (!value) {
+      error = 'Name is required';
+    } else if (value !== 'Naruto') {
+      error = "Jeez! You're not a fan 😱";
+    }
+    return error || true;
+  }
+
+  function onSubmit(values) {
+    setTimeout(() => {
+      alert(JSON.stringify(values, null, 2));
+    }, 1000);
+  }
+
   return (
     <Box m={3}>
-      <Container>
-        <LockOutlined />
-      </Container>
-      <Typography component="h1" variant="h5">
-        {t('login.asklogin')}
-      </Typography>
-      <form noValidate>
-        <TextField
-          variant="outlined"
-          margin="normal"
-          required
-          fullWidth
-          id="email"
-          label={t('login.username.label')}
-          name="email"
-          autoComplete="email"
-        />
-        <TextField
-          variant="outlined"
-          margin="normal"
-          required
-          fullWidth
-          name="password"
-          label={t('login.password.label')}
-          type="password"
-          id="password"
-          autoComplete="current-password"
-        />
-        <Grid
-          container
-          direction="row"
-          justify="flex-start"
-          alignItems="flex-start"
-        >
-          <FormControlLabel
-            control={<Checkbox value="remember" color="primary" />}
-            label={t('login.keepconnection')}
+      <Box>
+        <Icon name="lock" size="32px" color="red.500" />
+      </Box>
+      <p>{t('login.asklogin')}</p>
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <FormControl isInvalid={errors.email}>
+          <FormLabel htmlFor="email">{t('login.username.label')}</FormLabel>
+          <Input
+            name="email"
+            placeholder={t('login.username.label')}
+            ref={register({ validate: validateName })}
           />
-        </Grid>
-        <Button type="submit" fullWidth variant="contained" color="primary">
+          <FormErrorMessage>
+            {errors.name && errors.name.message}
+          </FormErrorMessage>
+        </FormControl>
+        <FormControl isInvalid={errors.password}>
+          <FormLabel htmlFor="password">{t('login.password.label')}</FormLabel>
+          <Input
+            name="password"
+            placeholder={t('login.password.label')}
+            ref={register({ validate: validateName })}
+          />
+          <FormErrorMessage>
+            {errors.name && errors.name.message}
+          </FormErrorMessage>
+        </FormControl>
+        <Box>
+          <Checkbox value="remember" color="primary" />
+          {t('login.keepconnection')}
+        </Box>
+        <Button
+          mt={4}
+          variantColor="teal"
+          isLoading={formState.isSubmitting}
+          type="submit"
+        >
           {t('login.ready')}
         </Button>
-        <Grid container justify="space-between">
-          <Grid item>
+        <Box>
+          <Box>
             <Link href="#" variant="body2">
               {t('login.password.forgotten')}
             </Link>
-          </Grid>
-          <Grid item>
+          </Box>
+          <Box>
             <Link href="#" variant="body2">
               {t('login.register')}
             </Link>
-          </Grid>
-        </Grid>
+          </Box>
+        </Box>
       </form>
     </Box>
   );
