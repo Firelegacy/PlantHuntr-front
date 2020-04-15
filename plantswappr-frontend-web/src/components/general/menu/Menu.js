@@ -13,6 +13,7 @@ function Menu() {
   return (
     <Flex
       position="sticky"
+      zIndex="1"
       top={0}
       left={0}
       bg="gray.200"

@@ -10,7 +10,12 @@ function Base(props) {
     <Fragment>
       <Menu />
       <Banner />
-      <Box minHeight="calc(100vh - 429px)">{props.children}</Box>
+      <Box
+        minHeight="calc(100vh - 429px)"
+        background="linear-gradient(180deg, rgba(237,242,247,1) 0%, rgba(160,174,192,1) 24%, rgba(26,32,44,1) 72%);"
+      >
+        {props.children}
+      </Box>
       <Footer />
     </Fragment>
   );
