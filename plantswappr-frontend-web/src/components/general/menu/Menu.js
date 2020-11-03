@@ -21,14 +21,18 @@ function Menu() {
       py={1}
       justifyContent="space-between"
       alignItems="center"
+      boxShadow="0px 3px 25px 0px rgba(46,49,49,0.3)"
+      zIndex="75"
     >
       <Box>
         <DrawerMenu />
       </Box>
       <Flex flexDirection="row" justifyContent="center" alignItems="center">
-        <MenuLink path="/plantswappr" textKey="menu.link.about-plantswappr" />
+        <MenuLink path="/home" textKey="menu.link.home" />
+        <MenuLink path="/store" textKey="menu.link.store" />
         <Image src={logoFull} alt="Logo" size="100px" />
-        <MenuLink path="/todo" textKey="todo" />
+        <MenuLink path="/info" textKey="menu.link.info" />
+        <MenuLink path="/contact" textKey="menu.link.contact" />
       </Flex>
       <Box>
         <LanguagePicker />
