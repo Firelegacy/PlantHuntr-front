@@ -16,7 +16,7 @@
     "react-hook-form": "^5.2.0",
     "react-i18next": "^11.3.4",
     "react-icons": "^3.9.0",
-    "react-scripts": "^3.4.1"
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
